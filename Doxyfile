@@ -4,7 +4,10 @@ OUTPUT_DIRECTORY       = docs
 OUTPUT_LANGUAGE        = English
 
 INPUT                  = miniapp_multigrid_preconditioner_poisson3d.cpp \
-                         mainpxsage.md
+                         mainpage.md
+
+USE_MDFILE_AS_MAINPAGE = mainpage.md
+
 FILE_PATTERNS          = *.cpp *.hpp *.h *.md
 RECURSIVE              = NO
 
@@ -29,10 +32,10 @@ MATHJAX_RELPATH        = https://cdn.jsdelivr.net/npm/mathjax@2
 MATHJAX_FORMAT         = HTML-CSS
 
 # Optional: doxygen-awesome theme (drop the three files into ./doxygen-awesome/)
-HTML_EXTRA_STYLESHEET  = doxygen-awesome/doxygen-awesome.css \
-                         doxygen-awesome/doxygen-awesome-sidebar-only.css
-HTML_EXTRA_FILES       = doxygen-awesome/doxygen-awesome.css \
-                         doxygen-awesome/doxygen-awesome-sidebar-only.css \
-                         doxygen-awesome/doxygen-awesome-darkmode-toggle.js
+HTML_EXTRA_STYLESHEET  = ./doxygen-awesome-css/doxygen-awesome.css \
+                         ./doxygen-awesome-css/doxygen-awesome-sidebar-only.css
+HTML_EXTRA_FILES       = ./doxygen-awesome-css/doxygen-awesome.css \
+                         ./doxygen-awesome-css/doxygen-awesome-sidebar-only.css \
+                         ./doxygen-awesome-css/doxygen-awesome-darkmode-toggle.js
 HTML_COLORSTYLE        = LIGHT
 HTML_DYNAMIC_MENUS     = YES
