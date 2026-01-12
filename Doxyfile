@@ -1,0 +1,38 @@
+PROJECT_NAME           = "Multigrid Preconditioner Mini-App (2D & 3D)"
+PROJECT_NUMBER         = "V0.1"
+OUTPUT_DIRECTORY       = docs
+OUTPUT_LANGUAGE        = English
+
+INPUT                  = miniapp_multigrid_preconditioner_poisson3d.cpp \
+                         mainpxsage.md
+FILE_PATTERNS          = *.cpp *.hpp *.h *.md
+RECURSIVE              = NO
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+JAVADOC_AUTOBRIEF      = YES
+MARKDOWN_SUPPORT       = YES
+HIDE_UNDOC_MEMBERS     = YES
+HIDE_UNDOC_CLASSES     = YES
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+GENERATE_LATEX         = NO
+SEARCHENGINE           = YES
+GENERATE_TREEVIEW      = YES
+SOURCE_BROWSER         = YES
+FULL_PATH_NAMES        = NO
+
+USE_MATHJAX            = YES
+MATHJAX_RELPATH        = https://cdn.jsdelivr.net/npm/mathjax@2
+MATHJAX_FORMAT         = HTML-CSS
+
+# Optional: doxygen-awesome theme (drop the three files into ./doxygen-awesome/)
+HTML_EXTRA_STYLESHEET  = doxygen-awesome/doxygen-awesome.css \
+                         doxygen-awesome/doxygen-awesome-sidebar-only.css
+HTML_EXTRA_FILES       = doxygen-awesome/doxygen-awesome.css \
+                         doxygen-awesome/doxygen-awesome-sidebar-only.css \
+                         doxygen-awesome/doxygen-awesome-darkmode-toggle.js
+HTML_COLORSTYLE        = LIGHT
+HTML_DYNAMIC_MENUS     = YES

@@ -1,0 +1,10 @@
+.DS_Store
+docs
+kokkos
+tmp
+old
+*~
+LaTeX
+.idea
+node_modules
+*.tgz
